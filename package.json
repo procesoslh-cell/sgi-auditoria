@@ -1,0 +1,21 @@
+{
+  "name": "sgi-auditoria",
+  "version": "0.9.1",
+  "private": true,
+  "description": "SGI Auditoria con gestion integral, monitor preventivo, auditorias programadas, hallazgos colaborativos y filtro global por empresa",
+  "workspaces": [
+    "backend",
+    "frontend"
+  ],
+  "scripts": {
+    "install:all": "npm install",
+    "seed": "npm run seed -w backend",
+    "dev": "concurrently \"npm run dev -w backend\" \"npm run dev -w frontend\"",
+    "dev:backend": "npm run dev -w backend",
+    "dev:frontend": "npm run dev -w frontend",
+    "start": "npm run start -w backend"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}

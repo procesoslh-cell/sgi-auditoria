@@ -1,4 +1,7 @@
-const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:4001/api';
+const API_URL =
+  import.meta.env.VITE_API_URL || 'http://localhost:4001';
+
+export default API_URL;
 
 export const COMPANIES = [
   { id: 'all', name: 'Todas', analizable: true },

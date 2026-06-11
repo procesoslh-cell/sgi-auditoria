@@ -1,5 +1,4 @@
-const API_URL =
-  import.meta.env.VITE_API_URL || 'http://localhost:4001';
+const VITE_API_URL=https://sgi-auditoria.onrender.com/api
 
 export default API_URL;
 
